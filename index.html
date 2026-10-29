@@ -3,55 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>深淵ドリル サポート</title>
-<meta name="description" content="iPhoneゲーム「深淵ドリル」のサポートページです。">
+<title>nkmrkoubou のゲーム</title>
+<meta name="description" content="nkmrkoubou が作っている iPhone ゲームの一覧です。各ゲームのサポートページとプライバシーポリシーはこちらから。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
 <link rel="stylesheet" href="style.css">
+<style>
+/* Game list: one card per game, linking to its own site (a separate repository under the same account). */
+.games{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.games a{display:flex;align-items:center;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--text);text-decoration:none}
+.games a:hover,.games a:focus-visible{border-color:var(--lamp)}
+.games img{width:56px;height:56px;border-radius:12px;image-rendering:pixelated;flex:none}
+.games .name{font-family:var(--pixel);font-size:20px;color:var(--lamp);letter-spacing:.06em;line-height:1.3}
+.games .sub{color:var(--muted);font-size:14px;line-height:1.6}
+</style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <img src="icon.png" alt="">
-    <div>
-      <div class="name">深淵ドリル</div>
-      <div class="sub">地面をタップして掘り進む放置ゲーム（iPhone）</div>
-    </div>
-  </header>
-  <nav>
-    <a href="index.html">サポート</a>
-    <a href="privacy.html">プライバシーポリシー</a>
-  </nav>
+  <h1>nkmrkoubou のゲーム</h1>
+  <p>iPhone向けのゲームを作っています。ゲームを選ぶと、そのゲームのサポートページとプライバシーポリシーを見られます。</p>
 
-  <h1>サポート</h1>
-  <p>「深淵ドリル」は、地面をタップして掘り進み、人類の最深記録、マントル、地球の中心を越えて、月や太陽の距離まで掘り抜くゲームです。</p>
-
-  <h2>よくある質問</h2>
-  <dl>
-    <dt>セーブデータはどこに保存されますか？</dt>
-    <dd>お使いのiPhoneの中にだけ保存されます。開発者のサーバーには送られません。進行は自動で保存されます。</dd>
-
-    <dt>機種変更したときにデータを引き継げますか？</dt>
-    <dd>iCloudバックアップ、またはパソコンでのバックアップから新しいiPhoneを復元すると、ゲームのデータも一緒に引き継がれます。アプリを削除するとデータも消えるので、ご注意ください。</dd>
-
-    <dt>アプリを閉じているあいだも掘り進みますか？</dt>
-    <dd>はい。留守のあいだも機材が掘り続けます（掘削力は50%、最大8時間ぶん）。次にアプリを開いたときに受け取れます。</dd>
-
-    <dt>広告は必ず見る必要がありますか？</dt>
-    <dd>いいえ。広告は、留守中の稼ぎを2倍にしたいときや、掘削力ブースト・オートタップを使いたいときに、ご自身で選んだ場合にだけ流れます。見なくても最後まで遊べます。</dd>
-
-    <dt>音や振動を止めたい</dt>
-    <dd>画面右上の「設定」から、BGM・効果音・振動をそれぞれオン・オフできます。</dd>
-  </dl>
+  <ul class="games">
+    <li><a href="shinen-drill/"><img src="shinen-drill/icon.png" alt=""><span><span class="name">深淵ドリル</span><br><span class="sub">地面をタップして掘り進む放置ゲーム</span></span></a></li>
+    <li><a href="mokublock/"><img src="mokublock/icon.png" alt=""><span><span class="name">もくもくブロック</span><br><span class="sub">木のブロックを置いて、たて・よこをそろえて消すパズル</span></span></a></li>
+    <li><a href="nekonekorunners/"><img src="nekonekorunners/icon.png" alt=""><span><span class="name">ねこねこランナーズ</span><br><span class="sub">ネコが町を走りぬけるランゲーム</span></span></a></li>
+    <li><a href="nekotower/"><img src="nekotower/icon.png" alt=""><span><span class="name">つみつみネコタワー</span><br><span class="sub">タップでネコを積み上げる積みゲーム</span></span></a></li>
+    <li><a href="nobineko/"><img src="nobineko/icon.png" alt=""><span><span class="name">のびーるネコ</span><br><span class="sub">長押しでネコがのびて、屋根から屋根へ渡るゲーム</span></span></a></li>
+  </ul>
 
   <h2>お問い合わせ</h2>
-  <div class="card">
-    <p>不具合のご報告やご意見は、下記のメールアドレスまでお送りください。お使いのiPhoneの機種とiOSのバージョンを書いていただけると、調査がスムーズです。</p>
-    <p>メール：<a href="mailto:nkmrkoubou@gmail.com">nkmrkoubou@gmail.com</a></p>
-  </div>
+  <p>メール：<a href="mailto:nkmrkoubou@gmail.com">nkmrkoubou@gmail.com</a></p>
 
-  <footer>© 2026 深淵ドリル開発者</footer>
+  <footer>© 2026 nkmrkoubou</footer>
 </div>
 </body>
 </html>
