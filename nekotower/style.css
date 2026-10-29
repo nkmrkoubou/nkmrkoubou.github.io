@@ -1,0 +1,25 @@
+/* つみつみネコタワーのサポートサイト。ゲームと同じ、空と段ボールの色。 */
+:root{
+  --sky:#eaf6ff; --paper:#fffaf2; --line:#f0dcc4; --ink:#5a3a22; --muted:#8a6a52; --accent:#e0577c; --box:#c8935a;
+  --round:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Hiragino Sans','Yu Gothic',sans-serif;
+  --body:'Zen Kaku Gothic New','Hiragino Sans','Yu Gothic',sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(var(--sky),var(--paper) 320px);background-color:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.85;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:32px 64px}
+header{display:flex;align-items:center;gap:16px;padding-bottom:24px;border-bottom:2px dashed var(--line);margin-bottom:28px}
+header img{width:72px;height:72px;border-radius:18px;box-shadow:0 4px 0 var(--line)}
+header .name{font-family:var(--round);font-weight:700;font-size:26px;line-height:1.25}
+header .sub{color:var(--muted);font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin-bottom:28px;font-size:14px}
+a{color:var(--accent)}
+h1{font-family:var(--round);font-weight:700;font-size:24px;margin:0 0 8px;text-wrap:balance}
+h2{font-family:var(--round);font-size:18px;margin:36px 0 8px;padding-top:4px;text-wrap:balance}
+p,li,dd{max-width:65ch}
+ul{padding-left:1.3em}
+.meta{color:var(--muted);font-size:14px}
+.card{background:#fff;border:2px solid var(--line);border-radius:16px;padding:16px 20px;margin:16px 0}
+footer{margin-top:48px;padding-top:20px;border-top:2px dashed var(--line);color:var(--muted);font-size:13px}
+dt{font-weight:700;margin-top:16px}
+dd{margin:4px 0 0}
