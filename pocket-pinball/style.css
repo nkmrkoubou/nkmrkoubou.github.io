@@ -1,0 +1,25 @@
+/* Support site for ポケットピンボール. Same neon arcade palette as the game. */
+:root{
+  --bg:#05010f; --panel:#120a26; --line:#2f2457; --cyan:#00f0ff; --pink:#ff2bd6; --gold:#ffd400; --text:#f4f0ff; --muted:#b4acd6;
+  --display:'DotGothic16','Osaka-Mono','MS Gothic',monospace;
+  --body:'Zen Kaku Gothic New','Hiragino Sans','Yu Gothic',sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.85;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:32px 64px}
+header{display:flex;align-items:center;gap:16px;padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:28px}
+header img{width:72px;height:72px;border-radius:16px;box-shadow:0 0 18px #00f0ff55}
+header .name{font-family:var(--display);font-size:clamp(20px,6.2vw,28px);color:var(--cyan);letter-spacing:.08em;line-height:1.2;text-shadow:0 0 10px #00f0ff88}
+header .sub{color:var(--muted);font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin-bottom:28px;font-size:14px}
+a{color:var(--pink)}
+h1{font-family:var(--display);font-weight:400;font-size:24px;letter-spacing:.04em;margin:0 0 8px;text-wrap:balance}
+h2{font-size:18px;margin:36px 0 8px;padding-top:4px;text-wrap:balance}
+p,li{max-width:65ch}
+ul{padding-left:1.3em}
+.meta{color:var(--muted);font-size:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:16px 0}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+dt{font-weight:700;margin-top:16px}
+dd{margin:4px 0 0}
