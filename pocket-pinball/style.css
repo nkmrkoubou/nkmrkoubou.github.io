@@ -25,3 +25,6 @@ dt{font-weight:700;margin-top:16px}
 dd{margin:4px 0 0}
 .store{display:inline-block;background:var(--pink);color:var(--bg);text-decoration:none;font-weight:700;border-radius:12px;padding:10px 18px;box-shadow:0 0 14px #ff2bd666}
 .store:hover{opacity:.9}
+.howto{background:var(--panel);border:1px solid var(--cyan);box-shadow:0 0 14px #00f0ff33;border-radius:16px;padding:16px 20px 16px 2.6em;margin:16px 0}
+.howto li{margin:4px 0}
+.howto b{color:var(--gold)}
